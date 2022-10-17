@@ -1,0 +1,47 @@
+{
+  "name": "pomodoro",
+  "version": "1.0.0",
+  "description": "pomodoro app",
+  "main": "./app/main.js",
+  "scripts": {
+    "postinstall": "install-app-deps",
+    "start": "npm install && electron ./app",
+    "pack": "electron-builder build --dir",
+    "dist": "electron-builder build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NextNextDev/pomodoro.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NextNextDev/pomodoro/issues"
+  },
+  "build": {
+    "appId": "com.example.app",
+    "dmg": {
+      "contents": [
+        {
+          "x": 110,
+          "y": 150
+        },
+        {
+          "x": 240,
+          "y": 150,
+          "type": "link",
+          "path": "/Applications"
+        }
+      ]
+    },
+    "win": {
+      "target": "portable",
+      "icon": "build/icon.ico"
+    }
+  },
+  "homepage": "https://github.com/NextNextDev/pomodoro#readme",
+  "devDependencies": {
+    "electron": "^16.0.5",
+    "electron-builder": "^22.14.5"
+  }
+}
