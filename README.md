@@ -5,3 +5,6 @@ This is a desktop version of the website "pomodoro-tracker.com" built on Electro
 ```
 npm run build
 ```
+
+### Screenshot
+![screenshot](/app/img/screen.png)
